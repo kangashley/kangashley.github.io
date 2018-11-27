@@ -5,7 +5,7 @@ body {
     font-size: 1.3em;
     font-weight: 400;
     line-height: 1.5;
-    color: hsl(0, 0, 18);
+    color: hsl(0, 0%, 18%);
 }
 
 h1 {
@@ -23,9 +23,9 @@ p.note {
     font-size: 0.8em;
 }
 
-.duotone {
+.colorful {
     font-family: Fugaz One;
-    color: #957ea9;
+    color: hsl(272, 20%, 58%);
     -webkit-animation: ashley 5s ease forwards infinite;
     animation: ashley 5s ease forwards infinite;
 }
@@ -37,7 +37,7 @@ p.note {
     to {
         opacity: 1;
     }
-   }
+}
 
 @keyframes fadeIn {
     0% {
@@ -50,37 +50,37 @@ p.note {
 
 @-webkit-keyframes ashley {
     0% {
-        color: #957ea9;
+        color: hsl(272, 20%, 58%);
     }
     25% {
-        color: #cb89aa;
+        color: hsl(330, 39%, 67%);
     }
     50% {
-        color: #8d95ba;
+        color: hsl(229, 25%, 64%);
     }
     75% {
-        color: #8fc4c9;
+        color: hsl(185, 35%, 67%);
     }
     to {
-        color: #957ea9;
+        color: hsl(272, 20%, 58%);
     }
 }
 
 @keyframes ashley {
     0% {
-        color: #957ea9;
+        color: hsl(272, 20%, 58%);
     }   
     25% {
-        color: #cb89aa;
+        color: hsl(330, 39%, 67%);
     }  
     50% {
-        color: #8d95ba;
+        color: hsl(229, 25%, 64%);
     }
     75% {
-        color: #8fc4c9;
+        color: hsl(185, 35%, 67%);
     }
     to {
-        color: #957ea9;
+        color: hsl(272, 20%, 58%);
     }
 }
 
