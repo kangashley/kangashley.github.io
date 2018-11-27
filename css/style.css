@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One|Work+Sans');
+
+body {
+    font-family: Work Sans;
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: hsl(0, 0, 18);
+}
+
+h1 {
+    font-family: Work Sans;
+    font-size: 2.3em;
+    line-height: 1.2;
+    margin: 0 0 40px 0;
+}
+
+p {
+    margin: 40px 0 40px 0;
+}
+
+p.note {
+    font-size: 0.7em;
+}
+
+.duotone {
+    font-family: Fugaz One;
+    color: #957ea9;
+    -webkit-animation: ashley 5s ease forwards infinite;
+    animation: ashley 5s ease forwards infinite;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+   }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes ashley {
+    0% {
+        color: #957ea9;
+    }
+    25% {
+        color: #cb89aa;
+    }
+    50% {
+        color: #8d95ba;
+    }
+    75% {
+        color: #8fc4c9;
+    }
+    to {
+        color: #957ea9;
+    }
+}
+
+@keyframes ashley {
+    0% {
+        color: #957ea9;
+    }   
+    25% {
+        color: #cb89aa;
+    }  
+    50% {
+        color: #8d95ba;
+    }
+    75% {
+        color: #8fc4c9;
+    }
+    to {
+        color: #957ea9;
+    }
+}
+
+a, a:visited {
+    color: hsl(225, 100%, 40%);
+    text-decoration: wavy underline hsl(225, 100%, 40%);
+}
+
+ul {
+    margin-top: -3%;
+    margin-left: 5%;
+    list-style-type: '🍥 ';
+    line-height: 1.6;
+}
+
+section {
+    display: flex;
+}
+
+section:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+section div {
+    width: 50%;
+}
+
+section div.text {
+    padding: 60px;
+}
+
+div.full-image {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+div.image-1 {
+    background-image: url(../media/folio-about-me.jpg);
+    background-size: 100%;
+}
+
+div.image-2 {
+    background-image: url(../media/folio-projects-clean.gif);
+    background-position: center left;
+}
+
+div.image-3 {
+    background-image: url(../media/folio-etc-rothkotoastdottumblr.png);
+    background-position: center right;
+}
+
+@media (max-width: 800px) {
+    body {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p.note {
+        font-size: 0.8em;
+    }
+
+    section {
+        display: block;
+    }
+
+    section div {
+        width: 100%;
+    }
+
+    section div.text {
+        padding: 30px;
+    }
+
+    div.full-image {
+        height: 100vw;
+    }
+}
