@@ -137,16 +137,18 @@ div.image-3 {
 
 @media (max-width: 800px) {
     body {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     h1 {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
+    /*
     p.note {
-        font-size: 1em;
+        font-size: 0.8em;
     }
+    */
 
     section {
         display: block;
