@@ -92,7 +92,10 @@ a, a:visited {
 ul {
     margin-top: -3%;
     list-style-type: '🍥 ';
-    line-height: 1.6;
+}
+
+ul li:nth-child(n+2) {
+    margin-top: 2%;
 }
 
 section {
