@@ -86,6 +86,7 @@ p.note {
 
 a, a:visited {
     color: hsl(225, 100%, 40%);
+    text-underline-position: under;
     text-decoration: wavy underline hsl(225, 100%, 40%);
 }
 
