@@ -99,8 +99,10 @@ ul li:nth-child(n+2) {
     margin-top: 2%;
 }
 
-ul li:before{
+ul li:before {
     content: '🍥';
+    margin-left: -2em;
+    padding-right: 0.5em;
 }
 
 section {
