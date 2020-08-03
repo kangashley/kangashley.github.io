@@ -136,23 +136,23 @@ div.image-1 {
 }
 
 div.image-2 {
-    background-image: url(../media/folio-projects-p5jsshowcase.PNG);
+    background-image: url(../media/folio-projects-p5jsshowcase.png);
     background-position: center left;
 }
 
 div.image-3 {
     background-image: url(../media/folio-projects-clean.png);
-    background-position: center right;
+    background-position: center left;
 }
 
 div.image-4 {
     background-image: url(../media/folio-projects-locales.JPG);
-    background-position: center left;
+    background-position: center center;
 }
 
 div.image-5 {
     background-image: url(../media/folio-etc-eip.PNG);
-    background-position: center right;
+    background-position: center center;
 }
 
 @media (max-width: 800px) {
@@ -191,14 +191,6 @@ div.image-5 {
     }
 
     div.image-3 {
-        background-position: center center;
-    }
-    
-    div.image-4 {
-        background-position: center center;
-    }
-    
-    div.image-5 {
         background-position: center center;
     }
 }
