@@ -157,18 +157,12 @@ div.image-5 {
 
 @media (max-width: 800px) {
     body {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     h1 {
         font-size: 2em;
     }
-
-    /*
-    p.note {
-        font-size: 0.8em;
-    }
-    */
 
     section {
         display: block;
@@ -183,14 +177,15 @@ div.image-5 {
     }
 
     div.full-image {
-        height: 100vw;
+        width: 113%;
+        /* height: 100vw; */
     }
     
     div.image-2 {
         background-position: center center;
     }
-
-    div.image-3 {
-        background-position: center center;
+    
+    div.image-5 {
+        background-position: center left;
     }
 }
