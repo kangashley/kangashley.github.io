@@ -130,18 +130,28 @@ div.full-image {
 }
 
 div.image-1 {
-    background-image: url(../media/folio-about-me.jpg);
+    background-image: url("../media/folio-about-me.jpg");
     background-size: 100%;
     background-position: center center;
 }
 
 div.image-2 {
-    background-image: url(../media/folio-projects-zines-itpcamp.jpg);
+    background-image: url(../media/folio-projects-p5jsshowcase.png);
     background-position: center left;
 }
 
 div.image-3 {
-    background-image: url(../media/folio-etc-rothkotoastdottumblr.png);
+    background-image: url(../media/folio-projects-clean.png);
+    background-position: center right;
+}
+
+div.image-4 {
+    background-image: url(../media/folio-projects-locales.png);
+    background-position: center left;
+}
+
+div.image-5 {
+    background-image: url(../media/folio-projects-zines-itpcamp.jpg);
     background-position: center right;
 }
 
@@ -181,6 +191,14 @@ div.image-3 {
     }
 
     div.image-3 {
+        background-position: center center;
+    }
+    
+    div.image-4 {
+        background-position: center center;
+    }
+    
+    div.image-5 {
         background-position: center center;
     }
 }
