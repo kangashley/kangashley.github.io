@@ -131,7 +131,7 @@ div.full-image {
 
 div.image-1 {
     background-image: url("../media/folio-projects-zines-itpcamp.jpg");
-    background-size: 100%;
+    /* background-size: 100%; */
     background-position: center center;
 }
 
@@ -181,7 +181,7 @@ div.image-5 {
         /* height: 100vw; */
     }
     
-    div.image-2 {
+    div.image-3 {
         background-position: center center;
     }
     
