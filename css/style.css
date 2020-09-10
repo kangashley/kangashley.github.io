@@ -151,7 +151,7 @@ div.image-4 {
 }
 
 div.image-5 {
-    background-image: url(../media/folio-etc-eip.PNG);
+    background-image: url(../media/folio-etc-emoji.JPG);
     background-position: center center;
 }
 
@@ -185,6 +185,6 @@ div.image-5 {
     }
     
     div.image-5 {
-        background-position: center left;
+        background-position: center top;
     }
 }
