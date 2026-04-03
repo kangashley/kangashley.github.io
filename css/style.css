@@ -219,8 +219,18 @@ div.image-5 {
         font-size: 2em;
     }
 
+    h1.hero {
+        font-size: 2em;
+        text-align: center;
+    }
+
     section {
         display: block;
+    }
+
+    section.hero {
+        display: flex;
+        padding: 2em;
     }
 
     section div {
