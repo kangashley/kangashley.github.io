@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Instrument+Serif|Work+Sans:400');
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One|Work+Sans:400');
 
 body {
     font-family: Work Sans, sans-serif;
@@ -9,11 +9,23 @@ body {
 }
 
 h1, h2 {
-    font-family: Instrument Serif, serif;
+    font-family: Fugaz One, sans-serif;
     font-size: 2.3em;
     color: hsl(272, 20%, 58%);
     line-height: 1.2;
     margin: 0 0 40px 0;
+}
+
+h1.hero {
+    font-family: Fugaz One, sans-serif;
+    font-size: 4em;
+    background: hsl(0, 0%, 100%);
+    color: transparent;
+    margin: 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-animation: none;
+    animation: none;
 }
 
 p {
@@ -45,6 +57,42 @@ p.note {
     }
     to {
         opacity: 1;
+    }
+}
+
+@-webkit-keyframes hero {
+    0% {
+        background-color: hsl(272, 20%, 58%);
+    }
+    25% {
+        background-color: hsl(330, 39%, 67%);
+    }
+    50% {
+        background-color: hsl(229, 25%, 64%);
+    }
+    75% {
+        background-color: hsl(185, 35%, 67%);
+    }
+    to {
+        background-color: hsl(272, 20%, 58%);
+    }
+}
+
+@keyframes hero {
+    0% {
+        background-color: hsl(272, 20%, 58%);
+    }   
+    25% {
+        background-color: hsl(330, 39%, 67%);
+    }  
+    50% {
+        background-color: hsl(229, 25%, 64%);
+    }
+    75% {
+        background-color: hsl(185, 35%, 67%);
+    }
+    to {
+        background-color: hsl(272, 20%, 58%);
     }
 }
 
@@ -107,6 +155,14 @@ ul li:before {
 
 section {
     display: flex;
+}
+
+section.hero {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    -webkit-animation: hero 5s ease forwards infinite;
+    animation: hero 5s ease forwards infinite;
 }
 
 section:nth-child(odd){
