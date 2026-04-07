@@ -23,6 +23,7 @@ h1.hero {
     background: hsl(0, 0%, 100%);
     color: transparent;
     margin: 0;
+    padding: 0.1em;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-animation: none;
