@@ -166,7 +166,7 @@ section.hero {
     animation: hero 5s ease forwards infinite;
 }
 
-section:nth-child(odd){
+section:nth-child(even){
     flex-direction: row-reverse;
 }
 
