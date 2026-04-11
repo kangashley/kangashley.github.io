@@ -118,7 +118,7 @@ h1.hero {
     background-clip: text;
 }
 
-h1.colorful {
+h1.colorful, h2.colorful {
     color: hsl(225, 100%, 40%);
     -webkit-animation: header 5s ease forwards infinite;
     animation: header 5s ease forwards infinite;
