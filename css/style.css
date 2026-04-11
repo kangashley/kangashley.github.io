@@ -1,48 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fugaz+One|Work+Sans:400');
-
-body {
-    font-family: Work Sans, sans-serif;
-    font-size: 1.4em;
-    font-weight: 400;
-    line-height: 1.5;
-    color: hsl(0, 0%, 18%);
-    margin: 0;
-}
-
-h1, h2 {
-    font-family: Fugaz One, sans-serif;
-    font-size: 2.3em;
-    color: hsl(272, 20%, 58%);
-    line-height: 1.2;
-    margin: 0 0 40px 0;
-}
-
-h1.hero {
-    font-family: Fugaz One, sans-serif;
-    font-size: 4em;
-    background: hsl(0, 0%, 100%);
-    color: transparent;
-    margin: 0;
-    padding: 0.1em;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-animation: none;
-    animation: none;
-}
-
-p {
-    margin: 40px 0 40px 0;
-}
-
-p.note {
-    font-size: 0.8em;
-}
-
-.colorful {
-    color: hsl(272, 20%, 58%);
-    -webkit-animation: header 5s ease forwards infinite;
-    animation: header 5s ease forwards infinite;
-}
+@import url('https://fonts.googleapis.com/css?family=Jacquard+24|Work+Sans:400');
 
 @-webkit-keyframes fadeIn {
     0% {
@@ -134,6 +90,48 @@ p.note {
     }
 }
 
+body {
+    font-family: Work Sans, sans-serif;
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: hsl(0, 0%, 18%);
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: "Jacquard 24", system-ui;
+    font-size: 2.3em;
+    color: hsl(225, 100%, 40%);
+    line-height: 1.2;
+    margin: 0 0 40px 0;
+}
+
+h1.hero {
+    font-family: "Jacquard 24", system-ui;
+    font-size: 8em;
+    background: hsl(0, 0%, 100%);
+    color: transparent;
+    margin: 0;
+    padding: 0.1em;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+h1.colorful {
+    color: hsl(225, 100%, 40%);
+    -webkit-animation: header 5s ease forwards infinite;
+    animation: header 5s ease forwards infinite;
+}
+
+p {
+    margin: 40px 0 40px 0;
+}
+
+p.note {
+    font-size: 0.8em;
+}
+
 a, a:visited {
     color: hsl(225, 100%, 40%);
     text-underline-position: under;
@@ -150,7 +148,7 @@ ul li:nth-child(n+2) {
 }
 
 ul li:before {
-    content: '🍥';
+    content: '🍥' / '';;
     margin-left: -1.6em;
     padding-right: 0.5em;
 }
@@ -222,7 +220,6 @@ div.image-5 {
     }
 
     h1.hero {
-        font-size: 2em;
         text-align: center;
     }
 
