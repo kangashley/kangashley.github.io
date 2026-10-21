@@ -1,0 +1,193 @@
+hear me out: I want to completely redo my portfolio concept to be a letter. can we recreate this pink envelope in CSS: envelope-pink.jpg
+
+---
+
+please build in CSS first! I'll walk you thru the experience after
+
+---
+
+in a separate HTML file, can we recreate "envelope-blue.jpg"? trying to decide which dimensions work best for my portfolio experience
+
+---
+
+thanks for the previews, can we comment those out? let's due portrait for now. for the postcard, can you replace with media/folio-etc-beach.jpg? for the cream note, can you add the text from this code snippet in Instrument Serif font? 
+
+<pasted_content id="2952">
+          <p>Hello world, I'm Ashley Kang! I use my caboodle of research, design, code, and AI to make more room for people to do things that feel like play 🪄</p>
+          <p>My career mixtape is about learning from the best: A season in web development with an award-winning in-house marketing team and a design + technology consulting collective, then a pivot to cybersecurity on world-class teams such as an applied AI unicorn, now a side quest advising marketing agency and social impact nonprofit clients on how to use AI with intention for day-to-day operations and bold product visions. I have a MS in computer science and a BA in a self-designed liberal arts concentration in art, media studies, and computer science.</p>
+          <p>I'm open to learning about project collaborations and full-time opportunities where I get to use my product mind, security heart, and builder hands. My idea of a good time is scrolling <a href="https://www.apartmenttherapy.com/" target="_blank">Apartment Therapy</a> while sipping an einspänner or discovering local gems where princesses like my friends and I can hide from our duties.</p>
+          <p>Elsewhere:</p>
+          <ul>
+            <li><a href="https://linkedin.com/in/kangashley" target="_blank">LinkedIn</a></li>
+            <li>Member @ <a href="https://www.jointheogc.com/" target="_blank">the old girls club</a>, <a href="https://aisnackclub.com/" target="_blank">AI Snack Club</a>, <a href="https://www.wicys.org/" target="_blank">Women in CyberSecurity</a></li>
+            <li>Speaker @ <a href="https://web.archive.org/web/20251012155320/https://www.tuftswit.com/speakers" target="_blank">Tufts Women in Tech Conference</a>, <a href="https://www.instagram.com/buwics/p/DQpDy3HDg78/" target="_blank">BU Women in Computer Science Club</a></li>
+          </ul>
+          <p class="note">Credits: Designed and developed by yours truly (&#169; 2026 Ashley Kang), layout help from Claude Code and SuperHi, typeset with Jacquard 24 and Work Sans from Google Fonts, compressed with Squoosh
+          </p>
+</pasted_content id="2952">
+
+---
+
+instead of Instrument Serif, let's go back to Work Sans
+
+---
+
+I don't like the cream background, can we set it to white for now?
+
+---
+
+what would it look without the drop shadow?
+
+---
+
+let's try the middle option?
+
+---
+
+on the cream note, can we add a letter head with my name centered in Jacquard 24: Ashley Kang
+
+---
+
+for body text, can we try Cormorant Garamond? I'm looking for the right serif...
+
+---
+
+can you remove any shadow from the cream note? it looks tacky. can we also make the body text the rem equivalent of 18px?
+
+---
+
+for the letterhead, can we try Pinyon Script instead?
+
+---
+
+can we update the letter layout and font to resemble the typewritten letter "letter-vogue.jpg"?
+
+---
+
+can we make the cream note wider? please center "from the studio of ashley kang" as well as the body text
+
+---
+
+center the text but left-align! see "vogue-letter.jpg" for reference
+
+---
+
+can you move the date to the left like in "vogue-letter.jpg"?
+
+---
+
+sorry, I meant to the right!
+
+---
+
+can you center my signature "Ashley"?
+
+---
+
+can you make the letterhead the same font size as the body text?
+
+---
+
+can you replace Bodoni Italic with Cutive Mono and remove any unused fonts?
+
+---
+
+can you update the letter to be on 1 line?
+
+---
+
+can we add more space to the top? (similar to the bottom)
+
+---
+
+can we try a lilac/lavender envelope? see: "envelope-lavender.jpg"
+
+---
+
+can we try a lilac/lavender envelope? see: "envelope-lavender.jpg"
+
+---
+
+please remove all unused comments and code from the preview file!
+
+---
+
+ok, let's prep to modify my original index.html file. can you make sure this preview file adheres to my code style guide (refer to how I wrote index.html and css/)
+
+---
+
+can we create a preview with a pink envelope just like the one in "envelope-preview.html"
+
+---
+
+does cutive mono have an italic version?
+
+---
+
+can you double-check "envelope-pink-preview.html" follows my code style?
+
+---
+
+let's do 1, thanks!
+
+---
+
+can we consolidate CSS files into 1 style.css? can you save the lavender and blue envelope styles in a separate preview.css
+
+---
+
+now, can we update index.html with the same code as envelope-pink-preview.html?
+
+---
+
+can you remove any unused CSS?
+
+---
+
+<task-notification>
+<task-id>bhcjv8ks3</task-id>
+<tool-use-id>toolu_01RGVrXVhVX5MGstft8Wirux</tool-use-id>
+<output-file>/private/tmp/claude-501/-Users-ashleykang-Desktop-kangashley-github-io/c40360be-d0dc-42fb-87bd-043ce6738cdd/tasks/bhcjv8ks3.output</output-file>
+<status>failed</status>
+<summary>Background command "Remove unused envelope.css (backed up); verify renders unchanged" failed with exit code 144</summary>
+</task-notification>
+
+---
+
+I put those 2 css files back!
+
+---
+
+can I move them now?
+
+---
+
+I moved them to Desktop/references
+
+---
+
+I moved envelope-pink-preview.html to Desktop/references as well
+
+---
+
+can I move the letterhead header outside of letter-body class? also, what does envelope-back do?
+
+---
+
+there are too many divs. can we organize letter text as a section?
+
+---
+
+can we make the cream note a little wider? ratio: 8.5x11 in
+
+---
+
+can we move the letterhead header outside the letter-body section but keep the style? no absolute positioning
+
+---
+
+what is the stage class? is that a backdrop? can we rename it "desk"
+
+---
+
+revert! please rename it "wrapper"
