@@ -1,0 +1,17 @@
+is the `margin: 0` necessary in the body style?
+
+---
+
+what about font-size, font-weight, line-height, and color in body?
+
+---
+
+any unused styles in style.css that we can remove?
+
+---
+
+I manually cleaned up unused CSS, anything I missed?
+
+---
+
+I manually cleaned up unused CSS, anything I missed?

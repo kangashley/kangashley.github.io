@@ -1,0 +1,25 @@
+{
+  "cli_version": "0.5.0",
+  "checkpoint_id": "59bb8ae2b0f7",
+  "strategy": "manual-commit",
+  "branch": "working",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "js/envelope.js"
+  ],
+  "sessions": [
+    {
+      "metadata": "/59/bb8ae2b0f7/0/metadata.json",
+      "transcript": "/59/bb8ae2b0f7/0/full.jsonl",
+      "content_hash": "/59/bb8ae2b0f7/0/content_hash.txt",
+      "prompt": "/59/bb8ae2b0f7/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 42,
+    "cache_creation_tokens": 77749,
+    "cache_read_tokens": 1642328,
+    "output_tokens": 15216,
+    "api_call_count": 21
+  }
+}
