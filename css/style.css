@@ -1,94 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Jacquard+24|Work+Sans:400');
-
-@-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes hero {
-    0% {
-        background-color: hsl(272, 20%, 58%);
-    }
-    25% {
-        background-color: hsl(330, 39%, 67%);
-    }
-    50% {
-        background-color: hsl(229, 25%, 64%);
-    }
-    75% {
-        background-color: hsl(185, 35%, 67%);
-    }
-    to {
-        background-color: hsl(272, 20%, 58%);
-    }
-}
-
-@keyframes hero {
-    0% {
-        background-color: hsl(272, 20%, 58%);
-    }   
-    25% {
-        background-color: hsl(330, 39%, 67%);
-    }  
-    50% {
-        background-color: hsl(229, 25%, 64%);
-    }
-    75% {
-        background-color: hsl(185, 35%, 67%);
-    }
-    to {
-        background-color: hsl(272, 20%, 58%);
-    }
-}
-
-@-webkit-keyframes header {
-    0% {
-        color: hsl(272, 20%, 58%);
-    }
-    25% {
-        color: hsl(330, 39%, 67%);
-    }
-    50% {
-        color: hsl(229, 25%, 64%);
-    }
-    75% {
-        color: hsl(185, 35%, 67%);
-    }
-    to {
-        color: hsl(272, 20%, 58%);
-    }
-}
-
-@keyframes header {
-    0% {
-        color: hsl(272, 20%, 58%);
-    }   
-    25% {
-        color: hsl(330, 39%, 67%);
-    }  
-    50% {
-        color: hsl(229, 25%, 64%);
-    }
-    75% {
-        color: hsl(185, 35%, 67%);
-    }
-    to {
-        color: hsl(272, 20%, 58%);
-    }
-}
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400|Cutive+Mono|Pinyon+Script');
 
 body {
     font-family: Work Sans, sans-serif;
@@ -97,31 +7,6 @@ body {
     line-height: 1.5;
     color: hsl(0, 0%, 18%);
     margin: 0;
-}
-
-h1, h2 {
-    font-family: "Jacquard 24", system-ui;
-    font-size: 2.3em;
-    color: hsl(225, 100%, 40%);
-    line-height: 1.2;
-    margin: 0 0 40px 0;
-}
-
-h1.hero {
-    font-family: "Jacquard 24", system-ui;
-    font-size: 8em;
-    background: hsl(0, 0%, 100%);
-    color: transparent;
-    margin: 0;
-    padding: 0.1em;
-    -webkit-background-clip: text;
-    background-clip: text;
-}
-
-h1.colorful, h2.colorful {
-    color: hsl(225, 100%, 40%);
-    -webkit-animation: header 5s ease forwards infinite;
-    animation: header 5s ease forwards infinite;
 }
 
 p {
@@ -153,103 +38,214 @@ ul li:before {
     padding-right: 0.5em;
 }
 
-section {
+div.wrapper {
+    display: grid;
+    place-items: center;
+    min-height: 100svh;
+    padding: 3vmin 16px;
+}
+
+div.envelope {
+    --env-w: min(80vw, 520px, calc((100svh - 6vmin) * var(--ratio) / 1.22));
+    --ratio: 0.81;
+    --tint: 338, 84%, 73%;
+    --tint-light: 337, 94%, 87%;
+    --card: hsl(50, 78%, 93%);
+    --ink: hsl(276, 18%, 16%);
+    --ink-dark: hsl(30, 7%, 11%);
+    --photo: url(../media/folio-etc-beach.jpg);
+    --ease: cubic-bezier(0.5, 0.1, 0.2, 1);
+    position: relative;
+    margin-top: calc(var(--env-w) / var(--ratio) * 0.2);
+    width: var(--env-w);
+    aspect-ratio: var(--ratio);
+    container-type: inline-size;
+    filter: drop-shadow(0 0.5em 0.9em hsla(333, 43%, 41%, 0.16));
+}
+
+div.envelope > div {
+    position: absolute;
+}
+
+div.envelope-back {
+    inset: 0;
+    border-radius: 3cqw 3cqw 0.6cqw 0.6cqw;
+    background: linear-gradient(180deg, hsla(var(--tint-light), 0.9), hsla(var(--tint), 0.95) 40%);
+}
+
+div.postcard {
+    left: -0.7%;
+    top: -11.5%;
+    width: 69%;
+    height: 80%;
+    transform: rotate(-0.8deg);
+    transition: transform 0.9s var(--ease);
+    background: var(--photo) center / cover;
+    box-shadow: 0 0.4em 1em hsla(240, 20%, 20%, 0.2);
+}
+
+div.letter {
+    left: 15%;
+    top: 7%;
+    width: 84%;
+    aspect-ratio: 8.5 / 11;
     display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transform: rotate(1.2deg);
+    transition: transform 0.9s var(--ease) 0.1s;
+    background:
+        radial-gradient(130% 80% at 30% 0, hsla(0, 0%, 100%, 0.6), transparent 65%),
+        var(--card);
+    color: var(--ink);
+    font-family: "Cutive Mono", "Courier New", monospace;
 }
 
-section.hero {
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    -webkit-animation: hero 5s ease forwards infinite;
-    animation: hero 5s ease forwards infinite;
+div.letter::after {
+    content: "";
+    position: absolute;
+    bottom: 4.5%;
+    left: 50%;
+    width: 11%;
+    aspect-ratio: 5 / 3;
+    transform: translateX(-50%);
+    border: 0.35cqw solid hsla(0, 0%, 100%, 0.85);
+    border-radius: 50%;
 }
 
-section:nth-child(even){
-    flex-direction: row-reverse;
+section.letter-body {
+    flex: 1;
+    min-height: 0;
+    padding: 0 9cqw 14cqw;
+    overflow-y: auto;
+    scrollbar-width: none;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
 }
 
-section div {
-    width: 50%;
+section.letter-body::-webkit-scrollbar {
+    display: none;
 }
 
-section div.text {
-    padding: 60px;
+section.letter-body p {
+    margin: 0;
 }
 
-div.full-image {
-    height: 100vh;
-    background-size: cover;
-    position: -webkit-sticky;
-    position: sticky;
+section.letter-body p + p {
+    margin-top: 0.7em;
+}
+
+section.letter-body ul {
+    margin: 0.7em 0 0 0;
+    padding-left: 1.1em;
+    list-style: disc;
+}
+
+section.letter-body ul li:nth-child(n+2) {
+    margin-top: 0.3em;
+}
+
+section.letter-body ul li:before {
+    content: none;
+}
+
+section.letter-body a, section.letter-body a:visited {
+    color: inherit;
+    text-underline-position: auto;
+    text-decoration: underline;
+    text-underline-offset: 0.12em;
+}
+
+section.letter-body p.note {
+    font-size: 0.8em;
+    opacity: 0.65;
+}
+
+header.letterhead {
+    padding: 12cqw 9cqw 1.6em;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+
+header.letterhead p {
+    margin: 0;
+}
+
+header.letterhead p.letterhead-title {
+    font-size: min(1em, 3.1cqw);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+
+header.letterhead p.date {
+    margin-top: 1.8em;
+    padding-left: 45%;
+    text-align: left;
+}
+
+section.letter-body p.signoff {
+    margin-top: 1.4em;
+}
+
+span.signature {
+    display: block;
+    font-family: "Pinyon Script", cursive;
+    font-size: 2.4em;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--ink-dark);
+}
+
+div.envelope.lifted div.letter {
+    transform: translateY(-8%) rotate(1.2deg);
+}
+
+div.envelope.lifted div.postcard {
+    transform: translateY(-9%) rotate(-0.8deg);
+}
+
+div.fold-left, div.fold-right, div.fold-bottom {
+    z-index: 3;
+    pointer-events: none;
+    background: linear-gradient(180deg, hsla(var(--tint-light), 0.62), hsla(var(--tint), 0.72));
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+}
+
+div.fold-left {
+    left: 0;
     top: 0;
+    width: 27%;
+    height: 100%;
+    clip-path: polygon(0 42%, 100% 55%, 100% 100%, 0 100%);
 }
 
-div.image-1 {
-    background-image: url("../media/folio-about-itpcamp.jpg");
-    background-position: center center;
+div.fold-right {
+    left: 78%;
+    top: 0;
+    width: 22%;
+    height: 100%;
+    clip-path: polygon(0 53%, 100% 42%, 100% 100%, 0 100%);
 }
 
-div.image-2 {
-    background-image: url(../media/folio-projects-p5jsshowcase.png);
-    background-position: center left;
-}
-
-div.image-3 {
-    background-image: url(../media/folio-projects-clean.png);
-    background-position: center left;
-}
-
-div.image-4 {
-    background-image: url(../media/folio-projects-locales.jpg);
-    background-position: center center;
-}
-
-div.image-5 {
-    background-image: url(../media/folio-etc-beach.jpg);
-    background-position: center center;
+div.fold-bottom {
+    left: 6.5%;
+    top: 58%;
+    width: 88%;
+    height: 42%;
+    border-radius: 2.5cqw 2.5cqw 0.6cqw 0.6cqw;
+    background: linear-gradient(180deg, hsla(var(--tint-light), 0.55), hsla(var(--tint), 0.68));
+    box-shadow: inset 0 0.15cqw 0 hsla(0, 0%, 100%, 0.25);
 }
 
 @media (max-width: 800px) {
     body {
         font-size: 1.2em;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    h1.hero {
-        font-size: 6em;
-        text-align: center;
-    }
-
-    section {
-        display: block;
-    }
-
-    section.hero {
-        display: flex;
-        padding: 2em;
-    }
-
-    section div {
-        width: 85%;
-    }
-
-    section div.text {
-        padding: 30px;
-    }
-
-    div.full-image {
-        width: 100%;
-    }
-    
-    div.image-3 {
-        background-position: center center;
-    }
-    
-    div.image-5 {
-        background-position: center top;
     }
 }
