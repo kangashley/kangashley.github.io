@@ -1,0 +1,37 @@
+do I need to commit .entire/.gitignore?
+
+---
+
+why is a .gitignore file relevant here?
+
+---
+
+what happened to the Entire checkpoint number? it was included in my most recent PR
+
+---
+
+Entire-Checkpoint: 60cd72907225
+
+---
+
+should the Entire checkpoint be public in the PR or omitted?
+
+---
+
+checkpoint 59bb8ae2b0f7 was auto-added to the PR, idk why
+
+---
+
+can we try an envelope with this color: hsl(309.23, 53.42%, 42.94%)
+
+---
+
+it looks tacky...can we add a grain to it so it has a risograph-like texture?
+
+---
+
+can we add this grain to the original brown background color?
+
+---
+
+can you move the grain to style.css?
