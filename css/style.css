@@ -30,7 +30,7 @@ div.envelope {
     --card: hsl(50, 78%, 93%);
     --ink: hsl(276, 18%, 16%);
     --ink-dark: hsl(30, 7%, 11%);
-    --photo: url(../media/folio-etc-beach.jpg);
+    --photo: url(../media/folio-etc-vinyl.jpg);
     --ease: cubic-bezier(0.5, 0.1, 0.2, 1);
     position: relative;
     margin-top: calc(var(--env-w) / var(--ratio) * 0.2);
