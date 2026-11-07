@@ -25,8 +25,8 @@ div.wrapper {
 div.envelope {
     --env-w: min(80vw, 520px, calc((100svh - 6vmin) * var(--ratio) / 1.22));
     --ratio: 0.81;
-    --tint: 338, 84%, 73%;
-    --tint-light: 337, 94%, 87%;
+    --tint: 306, 36%, 72%;
+    --tint-light: 306, 44%, 86%;
     --card: hsl(50, 78%, 93%);
     --ink: hsl(276, 18%, 16%);
     --ink-dark: hsl(30, 7%, 11%);
@@ -37,7 +37,7 @@ div.envelope {
     width: var(--env-w);
     aspect-ratio: var(--ratio);
     container-type: inline-size;
-    filter: drop-shadow(0 0.5em 0.9em hsla(333, 43%, 41%, 0.16));
+    filter: drop-shadow(0 0.5em 0.9em hsla(306, 25%, 40%, 0.16));
 }
 
 div.envelope > div {
